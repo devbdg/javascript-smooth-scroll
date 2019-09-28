@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: $font;
+  font-size: 16px;
+  @extend %reset;
+  background-color: $main-light;
+  color: $main-color;
+}
+a {
+  text-decoration: none
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background: $primary-color;
+  box-shadow: 0 5px 20px 0 rgba(black, 0.2);
+  ul {
+    text-align: center;
+    li {
+      @extend %reset-li;
+      display: inline-block;
+      a {
+        color: $main-light;
+        margin: 0 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#app {
+  > div {
+    @include full;
+    @include full-center;
+    span {
+      font-size: 5rem;
+      color: rgba(black, 0.5);
+      font-weight: 300;
+    }
+  }
+}
+
+#one {
+  background-color: rgba($yellow, 0.3)
+}
+
+#two {
+  background-color: rgba($green, 0.3)
+}
+
+#three {
+  background-color: rgba($orange, 0.3)
+}
+
+#four {
+  background-color: rgba($violet, 0.3)
+}
+
+#five {
+  background-color: rgba($green, 0.3)
+}
+
+#six {
+  background-color: rgba($pink, 0.3)
+}
+
+#seven {
+  background-color: rgba($blue, 0.3)
+}
